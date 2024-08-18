@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --blue-0: 1, 42, 74;
+  --blue-1: 1, 58, 99;
+  --blue-2: 1, 73, 124;
+  --blue-3: 1, 79, 134;
+  --blue-4: 42, 111, 151;
+  --blue-5: 44, 125, 160;
+  --blue-6: 70, 143, 175;
+  --blue-7: 97, 165, 194;
+  --blue-8: 137, 194, 217;
+  --blue-9: 169, 214, 229;
+
+  --green-0: 82, 182, 154;
+  --green-1: 118, 200, 147;
+  --green-2: 153, 217, 140;
+  --green-3: 181, 228, 140;
+  --green-4: 217, 237, 146;
+
+  --grey-0: 231, 236, 239;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: var(--blue-8);
+  --background-end-rgb: var(--blue-9);
+  --section-border-color: 255, 255, 255;
+  --section-bg-color: var(--grey-0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: var(--blue-0);
+    --background-end-rgb: var(--blue-1);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* .card {
+  @apply w-full p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+}
+
+.card-header {
+  @apply text-2xl font-bold tracking-tight text-gray-900 dark:text-white;
+}
+
+.card-body {
+  @apply font-normal text-gray-700 dark:text-gray-400 grid grid-col-1 gap-4;
+}
+
+.card-body-sm {
+  @apply mb-2 text-sm font-medium text-gray-400;
+} */
