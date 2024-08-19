@@ -22,8 +22,12 @@ export default function Basic({ className }: { className?: string }) {
       </section>
       <Separator />
       <CardBody>
-        <p className="text-white">Hey, let me introduce myself!</p>
-        <p className="text-white">
+        <p className="dark:text-white">Hey, let me introduce myself!</p>
+        <p className="dark:text-white">
+          I am a Hungarian computer science MSc student at the Technical
+          University of Denmark.
+        </p>
+        <p className="dark:text-white">
           I participated in several software development projects during my BSc
           internship and activity at the Special Interest Group for Computer
           Science in Schönherz Dormitory (KSZK). I mainly worked on web-based
@@ -33,7 +37,7 @@ export default function Basic({ className }: { className?: string }) {
           understanding of web-based software. I have introductory experience
           with related DevOps concepts.
         </p>
-        <p className="text-white">
+        <p className="dark:text-white">
           During my previous work and activity at KSZK, I have learned how to
           cooperate efficiently with other developers, and my communication and
           problem-solving skills have greatly improved. My goal is always to do
