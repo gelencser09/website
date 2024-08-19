@@ -9,12 +9,16 @@ import python from "../images/python.svg";
 import git from "../images/git.svg";
 import docker from "../images/docker.svg";
 import node from "../images/node.svg";
+import teamwork from "../images/teamwork.svg";
+import precision from "../images/precision.svg";
+import punctuality from "../images/punctuality.svg";
 import Separator from "./Separator";
+import { ListItem } from "./ListItem";
 
 export default function Skills({ className }: { className?: string }) {
   return (
     <Card className={className}>
-      <CardHeader>Hard skills</CardHeader>
+      <CardHeader>Skills</CardHeader>
       <Separator />
       <CardBody>
         <SmallText>Most experience</SmallText>
@@ -33,6 +37,18 @@ export default function Skills({ className }: { className?: string }) {
           <img className="h-10 w-10 mx-1" src={node} alt="node" />
         </div>
       </CardBody>
+      <Separator />
+      <ul className="flex flex-wrap">
+        <ListItem src={teamwork} alt="teamwork">
+          Teamwork
+        </ListItem>
+        <ListItem src={precision} alt="precision">
+          Precision
+        </ListItem>
+        <ListItem src={punctuality} alt="punctuality">
+          Punctuality
+        </ListItem>
+      </ul>
     </Card>
   );
 }
