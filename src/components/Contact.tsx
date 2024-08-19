@@ -3,12 +3,13 @@ import { Card, CardBody, CardHeader, SmallText } from "./Card";
 import { ListItem } from "./List";
 import mail from "../images/mail.svg";
 import phone from "../images/phone.svg";
+import Separator from "./Separator";
 
 export default function Contact() {
   return (
     <Card>
       <CardHeader>Contact me</CardHeader>
-      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <Separator />
       <ul>
         <ListItem>
           <a
@@ -32,6 +33,8 @@ export default function Contact() {
           </a>
         </ListItem>
       </ul>
+      <Separator />
+      asd
     </Card>
   );
 }

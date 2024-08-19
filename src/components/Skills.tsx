@@ -9,12 +9,13 @@ import python from "../images/python.svg";
 import git from "../images/git.svg";
 import docker from "../images/docker.svg";
 import node from "../images/node.svg";
+import Separator from "./Separator";
 
 export default function Skills({ className }: { className?: string }) {
   return (
     <Card className={className}>
       <CardHeader>Hard skills</CardHeader>
-      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <Separator />
       <CardBody>
         <SmallText>Most experience</SmallText>
         <div className="flex">
