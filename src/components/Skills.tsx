@@ -38,7 +38,7 @@ export default function Skills({ className }: { className?: string }) {
         </div>
       </CardBody>
       <Separator />
-      <ul className="flex flex-wrap">
+      <ul className="grid grid-cols-1 gap-3 lg:grid-cols-2 xl:grid-cols-3">
         <ListItem src={teamwork} alt="teamwork">
           Teamwork
         </ListItem>
