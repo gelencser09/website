@@ -4,6 +4,7 @@ import Basic from "../components/Basic";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import avatar from "../images/avatar.svg";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -22,4 +23,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Ákos Gelencsér</title>;
+export const Head: HeadFC = () => (
+  <>
+    <title>Ákos Gelencsér</title>
+    <link rel="icon" href={avatar} />
+  </>
+);
