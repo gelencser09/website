@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Card, CardBody, CardHeader, SmallText } from "./Card";
+import ButtonLink from "./ButtonLink";
 
 export default function Basic({ className }: { className?: string }) {
   return (
@@ -38,6 +39,7 @@ export default function Basic({ className }: { className?: string }) {
           Vestibulum id efficitur purus. Proin egestas metus at accumsan
           fringilla.
         </p>
+        <ButtonLink href="/akos-gelencser-cv-v1.pdf">Download CV</ButtonLink>
       </CardBody>
     </Card>
   );
