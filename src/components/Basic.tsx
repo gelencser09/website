@@ -1,22 +1,26 @@
 import * as React from "react";
 import { Card, CardBody, CardHeader, SmallText } from "./Card";
 import ButtonLink from "./ButtonLink";
+import profile from "../images/profile-cropped.jpg";
+import Separator from "./Separator";
 
 export default function Basic({ className }: { className?: string }) {
   return (
     <Card className={className}>
-      <section className="flex my-10">
-        <img
-          className="w-32 h-32 rounded"
-          src="https://placehold.co/400"
-          alt="Profile picture"
-        />
-        <div className="flex flex-col justify-center items-start px-10">
+      <section className="flex flex-wrap flex-col items-center md:flex-row my-10">
+        <div className="mx-5 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 p-0.5">
+          <img
+            className="w-32 h-32 rounded-lg"
+            src={profile}
+            alt="Profile picture"
+          />
+        </div>
+        <div className="mx-5 flex flex-col justify-center items-center py-5">
           <CardHeader>Ákos Gelencsér</CardHeader>
           <SmallText>Software developer</SmallText>
         </div>
       </section>
-
+      <Separator />
       <CardBody>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget
