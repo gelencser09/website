@@ -22,7 +22,7 @@ export default function Contact() {
             href="mailto:gelencser09@gmail.com"
             hide
           >
-            gelencser09 [at] gmail.com
+            gelencser09@gmail.com
           </ListItem>
           <ListItem src={phone} alt="phone" href="tel:+36309970444" hide>
             +36 30 997 0444

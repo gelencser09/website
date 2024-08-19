@@ -7,8 +7,8 @@ import Separator from "./Separator";
 export default function Basic({ className }: { className?: string }) {
   return (
     <Card className={className}>
-      <section className="flex flex-wrap flex-col items-center md:flex-row my-10">
-        <div className="mx-5 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 p-0.5">
+      <section className="flex flex-wrap flex-col items-center md:flex-row">
+        <div className="rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 p-0.5">
           <img
             className="w-32 h-32 rounded-lg"
             src={profile}
@@ -22,27 +22,24 @@ export default function Basic({ className }: { className?: string }) {
       </section>
       <Separator />
       <CardBody>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget
-          ante sed mauris rhoncus commodo vel ac quam. Integer condimentum
-          ligula ex, id dignissim mauris facilisis at. Pellentesque habitant
-          morbi tristique senectus et netus et malesuada fames ac turpis
-          egestas. Sed placerat lectus erat, nec auctor ante efficitur in.
-          Mauris luctus iaculis libero, eget auctor nulla tincidunt vitae. In at
-          volutpat felis, ac ultricies est. Suspendisse potenti. Sed at nisl
-          magna.
+        <p className="text-white">Hey, let me introduce myself!</p>
+        <p className="text-white">
+          I participated in several software development projects during my BSc
+          internship and activity at the Special Interest Group for Computer
+          Science in Schönherz Dormitory (KSZK). I mainly worked on web-based
+          applications, where my responsibility generally was front-end
+          development. Despite this, I have also had the chance to work on REST
+          or full-stack applications, so I have gained a comprehensive
+          understanding of web-based software. I have introductory experience
+          with related DevOps concepts.
         </p>
-        <p>
-          Duis lacus erat, consectetur vel purus sed, finibus accumsan risus.
-          Vestibulum a erat at libero dictum gravida. Morbi tincidunt, libero ac
-          malesuada pellentesque, mi nisi sodales libero, eu molestie libero
-          augue a lectus. Vivamus condimentum a nunc venenatis consequat. Duis
-          varius ornare magna, at elementum lectus ornare vitae. Nullam massa
-          enim, ornare sagittis metus ut, vehicula lacinia sem. Fusce pretium
-          nibh lacus. Ut suscipit est enim, a sollicitudin lacus mollis id.
-          Vestibulum id efficitur purus. Proin egestas metus at accumsan
-          fringilla.
+        <p className="text-white">
+          During my previous work and activity at KSZK, I have learned how to
+          cooperate efficiently with other developers, and my communication and
+          problem-solving skills have greatly improved. My goal is always to do
+          my job precisely and be on time with it.
         </p>
+
         <ButtonLink href="/akos-gelencser-cv-v1.pdf">Download CV</ButtonLink>
       </CardBody>
     </Card>
