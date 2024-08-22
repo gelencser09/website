@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import avatar from "../images/avatar.svg";
+import Projects from "../components/Projects";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <Skills />
           <Contact />
         </div>
+        <Projects />
       </main>
       <Footer />
     </>
