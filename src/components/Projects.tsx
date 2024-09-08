@@ -8,10 +8,13 @@ import react from "../images/react.svg";
 import nextjs from "../images/nextjs.svg";
 import postgres from "../images/postgres.png";
 import question from "../images/question.svg";
+import recycle from "../images/recycle.svg";
+import openai from "../images/openai.svg";
+import getotp from "../images/getotp.png";
 
 export default function Projects() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <Project name={"Links App"} iconSrc={links}>
         <p>
           A very simple but fully functional linktr.ee imitation where users can
@@ -21,7 +24,11 @@ export default function Projects() {
         <p className="flex items-center gap-3">
           <span>Tech stack:</span>
           <img src={react} alt="React" className="w-5 h-5" />
-          <img src={nextjs} alt="Next.JS" className="w-5 h-5" />
+          <img
+            src={nextjs}
+            alt="Next.JS"
+            className="w-5 h-5 bg-white rounded-full"
+          />
           <img src={postgres} alt="PostgreSQL" className="w-5 h-5" />
         </p>
         <ProjectLink
@@ -36,11 +43,38 @@ export default function Projects() {
         />
       </Project>
 
-      <div className="hidden md:block">
-        <Project name={"Placeholder"} iconSrc={question}>
-          <p>To be released...</p>
-        </Project>
-      </div>
+      <Project name={"Recycle! 🇩🇰 (beta)"} iconSrc={recycle}>
+        <p>
+          A web-based application to help people who have freshly moved to
+          Denmark sort their trash with the help of AI image recognition. The
+          app uses GetOTP and OpenAI as external secivces.
+        </p>
+        <p className="flex items-center gap-3">
+          <span>Tech stack:</span>
+          <img src={react} alt="React" className="w-5 h-5" />
+          <img
+            src={nextjs}
+            alt="Next.JS"
+            className="w-5 h-5 bg-white rounded-full"
+          />
+          <img src={getotp} alt="GetOTP" className="w-5 h-5 rounded-md" />
+          <img
+            src={openai}
+            alt="OpenAI"
+            className="w-5 h-5 bg-white rounded-md"
+          />
+        </p>
+        <ProjectLink
+          iconSrc={rocket}
+          label="Try it now!"
+          href="https://recycle.fly.dev/"
+        />
+        <ProjectLink
+          iconSrc={github}
+          label="View source code"
+          href="https://github.com/gelencser09/recycle"
+        />
+      </Project>
 
       <div className="hidden lg:block">
         <Project name={"Placeholder"} iconSrc={question}>

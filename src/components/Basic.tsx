@@ -17,12 +17,14 @@ export default function Basic({ className }: { className?: string }) {
         </div>
         <div className="mx-5 flex flex-col justify-center items-center py-5">
           <CardHeader>Ákos Gelencsér</CardHeader>
-          <SmallText>Software developer</SmallText>
+          <SmallText>Software engineer</SmallText>
         </div>
       </section>
       <Separator />
       <CardBody>
-        <p className="dark:text-white">Hey, let me introduce myself!</p>
+        <p className="dark:text-white font-medium">
+          Hey, welcome to my page! Let me introduce myself:
+        </p>
         <p className="dark:text-white">
           I am a Hungarian computer science MSc student at the Technical
           University of Denmark.
@@ -34,17 +36,18 @@ export default function Basic({ className }: { className?: string }) {
           applications, where my responsibility generally was front-end
           development. Despite this, I have also had the chance to work on REST
           or full-stack applications, so I have gained a comprehensive
-          understanding of web-based software. I have introductory experience
-          with related DevOps concepts.
+          understanding of web-based software. I have also experimented with
+          DevOps techniques, implementing various CI/CD solutions.
         </p>
         <p className="dark:text-white">
-          During my previous work and activity at KSZK, I have learned how to
-          cooperate efficiently with other developers, and my communication and
-          problem-solving skills have greatly improved. My goal is always to do
-          my job precisely and be on time with it.
+          I have worked with developers of all experience, gaining the skills to
+          learn from, teach, and cooperate with them. I always focus on
+          executing my tasks precisely while keeping up with the deadlines.
+          During my previous work, I gained decent communication and
+          problem-solving skills.
         </p>
 
-        <ButtonLink href="/akos-gelencser-cv-v1.pdf">Download CV</ButtonLink>
+        <ButtonLink href="/cv-v2.pdf">Download CV</ButtonLink>
       </CardBody>
     </Card>
   );
